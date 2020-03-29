@@ -1,0 +1,134 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "initialRows": 30,
+    "rowsToScroll": 2,
+
+    "profiles":
+    [
+        {
+            "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+            "hidden": false,
+            "name": "Ubuntu",
+            "useAcrylic":true,
+            "acrylicOpacity" : 0.7,
+            "colorScheme": "Dark",
+            "source": "Windows.Terminal.Wsl"
+        },
+        {
+            // Make changes here to the powershell.exe profile
+            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+            "name": "Windows PowerShell",
+            "commandline": "powershell.exe",
+            "startingDirectory": "C:/Progs",
+            "useAcrylic": true,
+            "acrylicOpacity" : 0.6,
+            "colorScheme": "Dark",
+            "hidden": false
+        },
+        {
+            // Make changes here to the powershell.exe profile
+            "guid": "{9acb9455-ca41-5af7-950f-6bca1bc9722f}",
+            "name": "Anaconda",
+            "commandline": "cmd.exe /K C:/Users/user/Anaconda3/Scripts/activate.bat C:/Users/user/Anaconda3",
+            "useAcrylic": true,
+            "acrylicOpacity" : 0.6,
+            "colorScheme": "Dark",
+            "hidden": false,
+            "icon": "C:/Users/user/OneDrive/Изображения/icons/anaconda.png"
+        },
+        {
+            // Make changes here to the powershell.exe profile
+            "guid": "{8acb9455-ca41-5af7-950f-6bca1bc9722f}",
+            "name": "Docker",
+            "commandline": "cmd.exe & 'C:\\Program Files \\Docker Toolbox\\docker-machine.exe' start default 'C:\\Program Files \\Docker Toolbox\\docker-machine.exe' env | Invoke-Expression",
+            "useAcrylic": true,
+            "acrylicOpacity" : 0.6,
+            "colorScheme": "Dark",
+            "startingDirectory": "C:/Progs/work",
+            "hidden": false,
+            "icon": "C:/Users/user/OneDrive/Изображения/icons/docker.png"
+        },
+        {
+            // Make changes here to the cmd.exe profile
+            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            "name": "cmd",
+            "commandline": "cmd.exe",
+            "useAcrylic": true,
+            "acrylicOpacity" : 0.6,
+            "colorScheme": "Dark",
+            "hidden": false
+        },
+        
+        {
+            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+            "hidden": false,
+            "name": "Azure Cloud Shell",
+            "useAcrylic": true,
+            "acrylicOpacity" : 0.6,
+            "colorScheme": "Dark",
+            "source": "Windows.Terminal.Azure"
+        }
+    ],
+
+    // Add custom color schemes to this array
+    "schemes": [
+        {
+            "name": "Dark",
+            "foreground": "#DCDFE4",
+            "background": "#333341",
+            "black": "#414B5F",
+            "red": "#F583AE",
+            "green": "#98C379",
+            "yellow": "#E5C07B",
+            "blue": "#318AD3",
+            "purple": "#C678DD",
+            "cyan": "#56B6C2",
+            "white": "#DCDFE4",
+            "brightBlack": "#9DA5B3",
+            "brightRed": "#EC6363",
+            "brightGreen": "#D1F4B8",
+            "brightYellow": "#F5E330",
+            "brightBlue": "#85C0F1",
+            "brightPurple": "#D468F4",
+            "brightCyan": "#8AEAF6",
+            "brightWhite": "#FFFFFF"
+        },
+        {
+            "name" : "UbuntuLegit",
+            "foreground" : "#EEEEEE",
+            "background" : "#0D0D0D",
+            "black" : "#4E9A06",
+            "blue" : "#579EF9",
+            "cyan" : "#48D8DA",
+            "green" : "#ECCFE3",
+            "purple" : "#D989E6",
+            "red" : "#E35656",
+            "white" : "#D3D7CF",
+            "yellow" : "#EFEEEB",
+            "brightBlack" : "#555753",
+            "brightBlue" : "#459CF9",
+            "brightCyan" : "#34E2E2",
+            "brightGreen" : "#8AE234",
+            "brightPurple" : "#F1DBEF",
+            "brightRed" : "#EF2929",
+            "brightWhite" : "#EEEEEE",
+            "brightYellow" : "#F4E888"
+        }
+    ],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": [
+        {"command" : "closeTab", "keys" : ["ctrl+w"]},
+        { "command": "closeWindow", "keys": ["alt+f4"] },
+        { "command": "splitHorizontal", "keys": ["ctrl+-"]},
+        { "command": "splitVertical", "keys": ["ctrl+\\"]},
+        {"keys": ["ctrl+shift+d"], "command": {"action": "splitPane", "split": "auto", "splitMode": "duplicate"}}
+    ]
+}
