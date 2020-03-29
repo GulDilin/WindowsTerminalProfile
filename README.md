@@ -1,8 +1,7 @@
 # WindowsTerminalProfile
 My own profile for Windows Terminal
 
-It contains my own color scheme for terminal:
-
+## Color scheme
 - ![#333341](https://placehold.it/15/333341/000000?text=+) `#333341 background`
 - ![#414B5F](https://placehold.it/15/414B5F/000000?text=+) `#414B5F black`
 - ![#F583AE](https://placehold.it/15/F583AE/000000?text=+) `#F583AE red`
@@ -20,3 +19,6 @@ It contains my own color scheme for terminal:
 - ![#D468F4](https://placehold.it/15/D468F4/000000?text=+) `#D468F4 bright purple`
 - ![#8AEAF6](https://placehold.it/15/8AEAF6/000000?text=+) `#8AEAF6 bright cyan`
 - ![#FFFFFF](https://placehold.it/15/FFFFFF/000000?text=+) `#FFFFFF bright white`
+
+## How to install
+Move file to `C:\Users\user\AppData\Local\Packages\Microsoft.WindowsTerminal\LocalState`
