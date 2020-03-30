@@ -22,3 +22,5 @@ My own profile for Windows Terminal
 
 ## How to install
 Move file to `C:\Users\user\AppData\Local\Packages\Microsoft.WindowsTerminal\LocalState`
+
+To check all colors you can run python script [color_test.py](./color_test.py)
